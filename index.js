@@ -96,9 +96,9 @@ const app=express();
 ];*/
 
 dotenv.config();
-const PORT=5000;
+const PORT=process.env.PORT;
 app.use(express.json());
-console.log(process.env);
+//console.log(process.env);
 async function createConnection(){
     //const MONGO_URL="mongodb://localhost/users1";
    // const MONGO_URL="mongodb+srv://Malatesh:Guvi1234@cluster0.asaxd.mongodb.net/users1";
